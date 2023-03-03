@@ -24,7 +24,7 @@
               <td>{{ menuItem.data.nameTH }}</td>
               <td>{{ menuItem.data.nameEn }}</td>
               <td>...</td>
-              <td>ลบ...{{ menuItem.id }}</td> <br />
+              <td>ลบ</td> <br />
                 <button @click="deleteMenu(menuItem.id)">ลบ</button>
           </tr>
           <tr></tr>
@@ -111,6 +111,7 @@ function GoogleLogin(){
     // IdP data available using getAdditionalUserInfo(result)
     // ...
     console.log("token ="+token+""+user)
+    router.push("about");
   }).catch((error) => {
     // Handle Errors here.
     const errorCode = error.code;
